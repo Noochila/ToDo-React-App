@@ -13,7 +13,7 @@ function App() {
 
 
 
-  fetch("http://localhost:3000/todos").then(async(res)=>{
+  fetch("https://todo-react-app-ry5i.onrender.com/todos").then(async(res)=>{
 
   const resp=await res.json();
   // console.log(resp);
