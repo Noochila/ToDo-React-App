@@ -1,5 +1,6 @@
 const mongoose=require("mongoose")
-mongoose.connect("").then(()=>{
+require("dotenv").config()
+mongoose.connect(process.env.MONGO).then(()=>{
     console.log("successfully connected");
 }).catch((err)=>{
     console.log(err);
