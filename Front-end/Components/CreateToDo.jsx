@@ -17,7 +17,7 @@ const [desc, setDes] = useState("")
         }} />
         <br />
         <button type="submit" onClick={() => {
-            fetch("https://todo-react-app-ry5i.onrender.com", {
+            fetch("https://todo-react-app-ry5i.onrender.com/todos", {
                 method: "POST", headers: { 'Content-Type': 'application/json' }, body:
                     JSON.stringify({ title: title, description: desc })
 
