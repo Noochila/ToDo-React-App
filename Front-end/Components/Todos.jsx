@@ -6,7 +6,7 @@ export function Todos({ todo }) {
   const handleButtonClick = (item) => {
 
 
-    fetch("http://localhost:3000/completed", {
+    fetch("https://todo-react-app-ry5i.onrender.com/completed", {
       method: "PUT",
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
